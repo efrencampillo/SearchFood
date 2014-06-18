@@ -1,5 +1,5 @@
 
-package com.lifesum.foodsearch;
+package com.lifesum.net;
 
 import java.io.*;
 import java.net.*;

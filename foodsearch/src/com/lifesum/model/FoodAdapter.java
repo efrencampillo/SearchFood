@@ -1,8 +1,11 @@
-package com.lifesum.foodsearch;
+package com.lifesum.model;
 
 import java.util.ArrayList;
 
 import org.json.JSONObject;
+
+import com.lifesum.foodsearch.R;
+import com.lifesum.foodsearch.R.layout;
 
 import android.content.Context;
 import android.util.Log;
@@ -17,13 +20,23 @@ import android.widget.BaseAdapter;
  *
  */
 public class FoodAdapter extends BaseAdapter{
-	ArrayList<FoodORM> list;
+	public ArrayList<FoodORM> list;
 	Context context;
-	public FoodAdapter(Context ctx) {
+	int type=0;
+	View display;
+	
+	/**
+	 * contructor
+	 * this is the builder of this classs
+	 * @param ctx the context to create views
+	 * @param tp 1: for row display, 0 for block display
+	 * */
+	public FoodAdapter(Context ctx,int tp) {
 		if(ctx==null){
 			Log.e("AdapterError", "this adapter must be instantiated with a context");
 			return;
 		}
+		type=tp;
 		context=ctx;
 		list=new ArrayList<FoodORM>();
 	}
@@ -62,7 +75,7 @@ public class FoodAdapter extends BaseAdapter{
 	public View getView(int index, View convertView, ViewGroup root) {
 		if(convertView==null){
 			LayoutInflater inflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			convertView=inflater.inflate(R.layout.layout_food_info, null);
+			convertView=inflater.inflate(type==1?R.layout.layout_food_info_row:R.layout.layout_food_info, null);
 		}
 		FoodORM food=list.get(index);
 		food.setOnView(convertView);

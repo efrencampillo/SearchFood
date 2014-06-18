@@ -3,10 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.lifesum.foodsearch.SearchActivity" >
 
-     <group android:checkableBehavior="all">
-        <item android:id="@+id/save"
-              android:title="@string/save" />
-    </group>
      <item android:id="@+id/action_search"
         android:title="@string/search_title"
         android:icon="@android:drawable/ic_menu_search"

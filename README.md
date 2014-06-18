@@ -18,12 +18,26 @@ Important:
 about the extra points
 
 ui/ux design:
+
 	I added the splash page with a custom transition between activities.
 Android guidelines: 
+
 	using the libraries that they provide and the elements that they share to use in the apps.
 caching:
+
 	no implemented, only offline finder trough SQLite
 multi-add items: 
+
 	not implemented
 different ways of listing data:
+
 	the information is organized by BaseAdapter a class that is easy to change to anothers views, as gallery or gridview.
+Changes from las commit
+
+	- was added the different ways of listing information.
+	- added a drawerlayout with options
+	- save info option was moved to menu in drawer layout
+	- frame to show info were improved
+	- test cases in automatized test was added
+	- on click food calls to search in google
+	- default enabled search view

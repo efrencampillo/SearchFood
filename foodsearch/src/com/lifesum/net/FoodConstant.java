@@ -1,4 +1,4 @@
-package com.lifesum.foodsearch;
+package com.lifesum.net;
 
 /**
  * this class contains the Contants

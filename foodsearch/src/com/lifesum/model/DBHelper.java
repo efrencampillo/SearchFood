@@ -1,4 +1,4 @@
-package com.lifesum.foodsearch;
+package com.lifesum.model;
 
 
 import java.util.ArrayList;

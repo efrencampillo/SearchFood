@@ -1,8 +1,8 @@
-package com.lifesum.foodsearch;
+package com.lifesum.net;
 
 
 
-import com.lifesum.foodsearch.RESTClient.RequestMethod;
+import com.lifesum.net.RESTClient.RequestMethod;
 
 import android.os.AsyncTask;
 

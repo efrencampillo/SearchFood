@@ -1,7 +1,9 @@
-package com.lifesum.foodsearch;
+package com.lifesum.model;
 
 import org.json.JSONObject;
 
+import com.lifesum.foodsearch.R;
+import com.lifesum.foodsearch.R.id;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import android.database.Cursor;

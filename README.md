@@ -32,7 +32,7 @@ multi-add items:
 different ways of listing data:
 
 	the information is organized by BaseAdapter a class that is easy to change to anothers views, as gallery or gridview.
-Changes from las commit
+Changes from last commit
 
 	- was added the different ways of listing information.
 	- added a drawerlayout with options
